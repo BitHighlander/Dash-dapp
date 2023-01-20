@@ -32,7 +32,7 @@ const coinSelect = require('coinselect')
 
 // 3. extend the theme
 const config = {
-  initialColorMode: 'light',
+  initialColorMode: 'dark',
   useSystemColorMode: false,
 }
 const theme = extendTheme({ config })
