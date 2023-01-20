@@ -2,16 +2,15 @@ import {
   React,
   useEffect,
   useState,
-
 } from 'react';
 import * as core from "@shapeshiftoss/hdwallet-core";
 import {
   ChakraProvider,
+  extendTheme,
   Box,
   Text,
   VStack,
   Grid,
-  theme,
   Modal,
   Button,
   ModalOverlay,
@@ -31,12 +30,20 @@ let {
 const pioneerApi = require("@pioneer-platform/pioneer-client")
 const coinSelect = require('coinselect')
 
+// 3. extend the theme
+const config = {
+  initialColorMode: 'light',
+  useSystemColorMode: false,
+}
+const theme = extendTheme({ config })
+
 let spec = 'http://localhost:1646/spec/swagger.json'
 let configKeepKey = {
   pairingInfo:{
     name: process.env['SERVICE_NAME'] || 'DASH',
     imageUrl: process.env['SERVICE_IMAGE_URL'] || 'https://assets.coincap.io/assets/icons/dash@2x.png',
-    basePath:spec
+    basePath:spec,
+    url:"https://dash-dapp.vercel.app/"
   }
 }
 
