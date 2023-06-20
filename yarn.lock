@@ -2431,6 +2431,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@keepkey/keepkey-sdk@^0.2.49":
+  version "0.2.49"
+  resolved "https://registry.yarnpkg.com/@keepkey/keepkey-sdk/-/keepkey-sdk-0.2.49.tgz#53561a6cd7c9ba11e332ffbe4bbf80819d429816"
+  integrity sha512-rVfj4P2dbJZgsZRh3+BQ8UpdZYfUYgD+nxiSUkG96dj8Q8qC0PY2vErzGeRtJ/L6CN7RqD3mShTeN0KNtS2aEQ==
+
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
