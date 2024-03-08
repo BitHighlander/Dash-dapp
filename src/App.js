@@ -290,7 +290,7 @@ function App() {
 
       //get balance DASH
       let balance = await pioneer.GetBalance({network:'DASH',xpub:responsePubkey.xpub})
-      balance = balance.data
+      balance = balance.data / 100000000
       setBalance(balance)
 
       //get new address
