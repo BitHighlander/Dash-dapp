@@ -235,6 +235,7 @@ function App() {
       //broadcast TX
       let broadcastBodyTransfer = {
         network:"DASH",
+        networkId:'bip122:000007d91d1254d60e2dd1ae58038307',
         serialized:signedTx,
         txid:"unknown",
         invocationId:"unknown"
